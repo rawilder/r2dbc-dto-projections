@@ -1,0 +1,15 @@
+flyway:
+  datasources:
+    default:
+      enabled: true
+datasources:
+  default:
+    url: placeholder
+    username: placeholder
+    password: placeholder
+r2dbc:
+  datasources:
+    default:
+      url: placeholder
+      username: placeholder
+      password: placeholder

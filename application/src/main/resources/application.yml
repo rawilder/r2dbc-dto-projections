@@ -1,0 +1,49 @@
+endpoints:
+  routes:
+    enabled: true
+    sensitive: false
+flyway:
+  datasources:
+    default:
+      enabled: true
+micronaut:
+  application:
+    name: r2dbc-dto-projectionsService
+  metrics:
+    export:
+      newrelic:
+        enabled: false
+        apiKey: ${NEWRELIC_API_KEY}
+        accountId: ${NEWRELIC_ACCOUNT_ID}
+        step: PT1M
+    enabled: true
+  security:
+    enabled: false
+    authentication: idtoken
+    oauth2:
+      clients:
+        default:
+          client-id: ${OAUTH_CLIENT_ID}
+          client-secret: ${OAUTH_CLIENT_SECRET}
+  router:
+    versioning:
+      enabled: true
+datasources:
+  default:
+    dialect: POSTGRES
+    url: jdbc:postgresql://localhost:5433/r2dbc-dto-projections_db
+    username: r2dbc-dto-projections
+    password: r2dbc-dto-projections
+#    schema: r2dbc-dto-projections
+r2dbc:
+  datasources:
+    default:
+      dialect: POSTGRES
+      url: r2dbc:postgresql://localhost:5433/r2dbc-dto-projections_db
+      username: r2dbc-dto-projections
+      password: r2dbc-dto-projections
+#      schema: r2dbc-dto-projections
+netty:
+  default:
+    allocator:
+      max-order: 3

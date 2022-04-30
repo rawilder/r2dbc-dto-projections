@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: dev.awilder
+testFramework: kotest
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, cache-caffeine, data, data-r2dbc, flyway, gradle, http-client, kotest, kotlin, kotlin-application, kotlin-build, kotlin-extension-functions, logback, management, micrometer, micrometer-new-relic, micronaut-build, netty-server, openapi, postgres, r2dbc, reactor, reactor-http-client, readme, security, security-annotations, security-oauth2, serialization-jackson, shade, testcontainers, yaml]
