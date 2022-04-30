@@ -7,9 +7,8 @@ import java.util.UUID
 
 @MappedEntity
 class TestEntity(
-    var name: String
-) {
-    @AutoPopulated
+    @field:AutoPopulated
     @field:Id
-    lateinit var id: UUID
-}
+    var id: UUID = UUID.randomUUID(),
+    var name: String
+)

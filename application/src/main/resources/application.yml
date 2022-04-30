@@ -34,7 +34,7 @@ datasources:
     url: jdbc:postgresql://localhost:5433/r2dbc-dto-projections_db
     username: r2dbc-dto-projections
     password: r2dbc-dto-projections
-#    schema: r2dbc-dto-projections
+    schema: r2dbc_dto_projection
 r2dbc:
   datasources:
     default:
@@ -42,7 +42,7 @@ r2dbc:
       url: r2dbc:postgresql://localhost:5433/r2dbc-dto-projections_db
       username: r2dbc-dto-projections
       password: r2dbc-dto-projections
-#      schema: r2dbc-dto-projections
+      schema: r2dbc_dto_projection
 netty:
   default:
     allocator:
